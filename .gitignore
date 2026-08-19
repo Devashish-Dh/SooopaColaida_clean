@@ -1,6 +1,5 @@
 # Local dependency and build trees
 dependencies/
-Benchmarks/
 
 # Local editor configuration
 .clangd
@@ -21,3 +20,23 @@ compile_commands.json
 *.dll
 *.exe
 *.ll
+
+# Benchmark generated artifacts
+/Benchmarks/**/build/
+/Benchmarks/**/build-artifacts/
+/Benchmarks/**/run-logs/
+
+# Compiled CUDA / host artifacts
+/Benchmarks/**/*.o
+/Benchmarks/**/*.cubin
+/Benchmarks/**/*.fatbin
+
+# Generated compiler output
+/Benchmarks/**/*.ptx
+/Benchmarks/**/*.raw.ll
+/Benchmarks/**/*.sc.ll
+
+# Logs
+/Benchmarks/**/*.log
+
+# Executables generated inside build/output dirs are already covered above
