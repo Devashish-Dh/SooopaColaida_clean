@@ -1,0 +1,23 @@
+# Local dependency and build trees
+dependencies/
+Benchmarks/
+
+# Local editor configuration
+.clangd
+.vscode/
+
+# Generic build outputs
+build/
+build-*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.ll
